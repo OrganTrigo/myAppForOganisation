@@ -1,0 +1,187 @@
+
+body{
+    background: linear-gradient(90deg, #85F6B8 0%, rgb(142, 217, 235, 0.85) 99.80%);
+    background-blend-mode: darken;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contain_quiz{
+    width: 30%;
+    height: 550px;
+    background-color: #ffff;
+    margin:auto;
+    margin-top: 50px;
+    min-width: 200px;
+   padding-top: 20px;
+   padding-right: 30px;
+   padding-left: 30px;
+   margin-left: 20px;
+   margin-right: 20px;
+  
+  
+ }
+  #btns{
+     margin-top: 80px;
+     display: flex;
+     text-align: center;
+     justify-content:space-around
+ } 
+ button{
+     padding-left: 15%;
+     padding-right: 15%;
+     padding-top: 4%;
+     padding-bottom: 4%;
+     
+
+ }
+ #btns button:nth-child(1){
+     color: white;
+     background-color:#ec880c;
+     border: none;
+    
+
+ }
+ 
+ .inact{
+     color: white;
+     background-color: #95ceae;
+     border: none;
+     cursor: not-allowed;
+ }
+ /* pour changer la couleur du bouton suivant le rendre actif lorsque on choisi une reponse il faut , pour cela on crée deux classe pour ce bouton le premier est inact cad lorsque le bouton est innactif  */
+
+ .act{
+    color: white;
+    background-color:green;
+    border: none;
+    cursor: pointer;
+}
+ #nom_joueur,#adress_mail{
+     text-align: center;
+ }
+
+ 
+ 
+
+ /* .form{
+    
+    width: 30%;
+    height: 550px;
+    background-color: #ffff;
+    margin: auto;
+    margin-top: 50px;
+    min-width: 200px;
+   padding-top: 20px;
+   padding-right: 30px;
+   padding-left: 30px;
+}
+
+h2,h3{
+    text-align: center;
+    margin: 40px;
+}
+.paragraphe{
+    text-align: center; 
+}
+input[type=submit]{
+    display: none; */
+/* } */
+/* 
+p>input{
+ width: 100%;
+ height: 3em;
+}
+#commencer{
+    color: white;
+    background-color: #028a3d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3em;
+    width: 50%;
+    margin: auto;
+    box-shadow: 3px 3px 3px rgb(63, 61, 61);
+}
+.rappel{
+    color: red;
+    font-size: smaller;
+}
+h6+div {
+    font-size: smaller;
+}
+progress{
+    width: 100%;
+} 
+.contain_answer{
+    border: solid 0.1px;
+    padding: 0.2em;
+    margin: 2em;
+}
+.contain_bouton_quitter_and_suivant{
+    display: flex;
+    align-items: center;
+    justify-content:space-between; 
+}
+.contain_button_quitter{
+   
+    background-color:#ec880c;
+    color: white;
+    padding-top:0.8em;
+    padding-left:2em;
+    padding-right: 5em;
+    padding-bottom: 0.6em;
+    
+
+
+}
+.contain_button_suivant{
+  
+    background-color:#95ceae;
+    color: white;
+    padding-top:0.8em;
+    padding-left:2em;
+    padding-right: 5em;
+    padding-bottom: 0.6em;
+}
+.button_quitter{
+    padding-left: 20px;
+}
+.button_suivant{
+    padding-left: 20px;
+}
+.form3{
+    width: 35%;
+    height: 550px;
+    background-color: #ffff;
+    margin: auto;
+    margin-top: 50px;
+    min-width: 200px;
+   padding:50px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-around ;
+   
+}
+.accueil_contain{
+    background-color: #0880d6;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3em;
+    width: 50%;
+    box-shadow: 3px 3px 3px rgb(63, 61, 61);
+}
+.image_coche{
+    width : 100px;
+height : 100px;
+}
+.contain_timer_and_question_number{
+    display: flex;
+    justify-content: space-between;
+    
+}
+ */

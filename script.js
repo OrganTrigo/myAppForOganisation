@@ -3,4 +3,3 @@ form_index.addEventListener('submit',()=>{
     sessionStorage.setItem('nom',document.getElementById('nom').value);
     sessionStorage.setItem('mail',document.getElementById('mail').value);
 })
-// addEventListener

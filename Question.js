@@ -144,7 +144,6 @@ let q12 = createQuestion("L'évènement _____ se déclenche quand on entre dans 
     
       
     ],13); 
-    // document.addEventListener
 
     let q14 = createQuestion("La syntaxe ECMA6 d'invocation directe d'une fonction est _____.",[
 

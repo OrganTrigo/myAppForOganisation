@@ -147,8 +147,6 @@ let q12 = createQuestion("L'évènement _____ se déclenche quand on entre dans 
 
     let q14 = createQuestion("La syntaxe ECMA6 d'invocation directe d'une fonction est _____.",[
 
-  
-      
 "$>",
 "=>",
 ">>",
@@ -187,6 +185,7 @@ let tab_questions = [
   { e: q14, r: "a2" },
   { e: q15, r: "a3" },
 ];
+// console.log(tab_questions);
 //rc = reponse cochée
 let answers_array = [
   { e: q1, r: "a1", rc: "" },     
@@ -205,6 +204,7 @@ let answers_array = [
   { e: q14, r: "a2", rc: "" },  
   { e: q15, r: "a3", rc: "" },      
 ];
+// console.log(answers_array);
 
 
 function starttimer() {
@@ -246,17 +246,6 @@ function passer() {
   }
 }
 
-function hide(e){
-  // e.target se réfère à l'élément <input> cliqué
-  
-  e.target.style.color = 'green';
-}
-
-// Attache l'écouteur à la liste
-// Il se déclenche pour chaque <li> clické
-input.addEventListener('click', hide, false);
-
-
 
 function catch_answers(e) {
   //e.target.id permet d'acceder à l'id de l'element qui a declanché l'event
@@ -278,6 +267,7 @@ function input_add_event_change() {
     //e ou event
     input.addEventListener("change", (e) => {
       catch_answers(e);
+      console.log(e);
       
       
     });
@@ -290,6 +280,7 @@ function result_calcul() {
   // filter c'est une qui permet de filtre un array
   //e permet de l'element en cours
   let good_answer_count = answers_array.filter((e) => e.r == e.rc).length;
+  console.log(good_answer_count);
   //injecter le code html du resultat.
 
   let result = `
@@ -324,4 +315,4 @@ function result_calcul() {
 document.getElementById("terminer").addEventListener("click", () => {
   result_calcul();
 });
-//
+

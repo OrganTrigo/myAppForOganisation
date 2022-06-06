@@ -5,6 +5,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-blend-mode: darken;
+    font-family: 'Inter', serif;
 }
 
 .contain_quiz{
@@ -14,7 +16,7 @@ body{
     margin:auto;
     margin-top: 50px;
     min-width: 200px;
-   padding-top: 20px;
+   /* padding-top: 20px; */
    padding-right: 30px;
    padding-left: 30px;
    margin-left: 20px;
@@ -60,8 +62,49 @@ body{
 }
  #nom_joueur,#adress_mail{
      text-align: center;
- }
+    
+    
+    }
+    
+     
+    input[type='radio'] {
+    -webkit-appearance:none;
+    width:15px;
+    height:15px;
+    border:1px solid black;
+    border-radius:50%;
+    outline:none;
+    
+}
+
  
+  
+  input[type='radio']:before {
+      content:'';
+    display:block;
+    width:100%;
+    height:100%;
+      
+    border-radius:100%;    
+  }
+  input[type='radio']:checked:before {
+    background:green;
+  } 
+  label{
+    border: solid 0.1px;
+    display:block;
+    padding: 0.3em;
+    margin-top:1.8rem;
+    margin-bottom:1.5rem;
+     border-width:0.01px;
+  }
+  .label_change_color{
+      border: green 2px;
+  }
+
+  
+
+
 
  /* .form{
     
